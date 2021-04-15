@@ -1,0 +1,92 @@
+@import 'styles.css';
+@import 'footer.css';
+@import 'header.css';
+
+/* заголовки блоков */
+h3 {
+    color: #6988ff;
+    border-bottom: solid 1px black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* хлебные крошки */
+.bred-style {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.bred-style a {
+    color:#6988ff;
+    font-size: 1.1em;   
+}
+.bred-style li:first-child {
+    padding-left: 50px;
+  }
+/* отступ от хедера */
+.block-description h2 {
+    text-align: center;
+    margin: 30px auto;
+}
+/* картинки тура  */
+.gallery {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    float: right;
+    margin: 0 -1px 0 5px;
+}
+/* входит в тур и опл. дополнительно */
+.block-cost, .block-extra {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    background-color: rgba( 255, 256, 255, 0.5);
+}
+.block-description, .block-cost, .block-extra {
+    margin: 30px 50px;
+}
+/* весь текст описания */
+.tour p {
+    padding-top: 20px;
+}
+/* цифры дней тура  */
+.tour p span {
+    display: inline-block;
+    border: #6988ff solid 1px;
+    border-radius: 50%;
+    color: #6988ff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 6px;
+    margin-right: 8px;
+    font-size: 1.5em;
+}
+/* списки внутри блоков  */
+.block-cost ul, .block-extra ul {
+    padding: 20px 40px;
+}
+/* заголовки списков  */
+.block-description h3, .block-cost h3, .block-extra h3 {
+    padding: 20px 0 0 30px;
+}
+/* для телефонов до 768px */
+@media only screen and (min-width: 320px) and (max-width : 768px) {
+    .block-description .gallery {
+        float: none;
+        width: 100%;
+    }
+    .block-description h2 {
+        margin: 10px auto;
+    }    
+    .block-description h3 {
+        margin: 0 ;
+        padding: 10px 0;
+    }
+    .gallery {
+        margin: 0;
+    }
+    .footer {
+        margin-top: 0;
+    }
+
+}

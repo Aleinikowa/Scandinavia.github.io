@@ -1,0 +1,116 @@
+/* общие стили на всех станицах   */
+body {
+	font-family: 'Nunito', sans-serif;
+	margin: 0 auto;
+	max-width: 1400px;
+	min-width: 360px;
+}
+p {
+	margin: 0;
+}
+h1 {
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: white;
+	display: grid;
+}
+/* заголовки в каждом блоке */
+h2 {
+	margin: 0;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/* меньший текст вместе с заголовком в каждом блоке */
+h3{
+	margin: 0;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+/* небольшой текст  */
+h4, label {
+	margin: 0;
+	font-size: 1.5em;
+	color: #000000;
+	font-weight: 600;
+
+} 
+/* самый маленький текст */
+h5  {
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.content {
+	margin:  0 auto;
+	position: relative;
+	max-width: 1400px;
+	background-color: #6987ff17;
+}
+
+.tour-content {
+    background-image: url(../images/page_2/body.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+/*общий текст для описания*/
+.tour__description {
+	font-size: 1.3em;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	padding-bottom: 1%;
+}
+/*общие стили для всех кнопок на сайте*/
+.tour__button-one, .button-two {  
+	width: 200px;
+	display: inline-block;
+	padding: 10px 40px;
+	text-decoration: none;
+	cursor: pointer;
+	background: #6988ff;
+	border-radius: .25rem;
+	color: white;
+	font-size: 1em;
+	letter-spacing: 3px;
+	transition: transform 0.2s;
+}
+.tour__button-one:hover {
+	background: #4764d2;
+	color: white;
+	transform: scale(1.1);
+	text-decoration: none;
+}
+/* кнопка наверх */
+#gotop {
+    position: fixed;
+    right: 10%;
+    top: 90%;
+    color: black;
+    display: none;
+}
+/* стилизация кнопки наверх */
+#gotop:hover {
+    text-decoration: none;
+    color: #182353;
+    cursor: pointer;
+}
+.contacts-footer a {
+	color: white;
+	text-decoration:none;
+}
+
+@media only screen and (min-width : 1700px) {
+	#gotop {
+		right: 20%;
+	}
+}
+
+@media only screen and (min-width : 2300px) {
+	#gotop {
+		right: 30%;
+	}
+}

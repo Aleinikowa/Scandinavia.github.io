@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/page_2.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo|Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<title>все туры</title>
+</head>
+<body>
+	<div class="content tour-content">
+		<div class="menu">	
+			<div class="menu__main">
+				<ul>
+					<li><a href="page_main.html">Главная</a></li>
+					<li><a href="page_2.html">Туры</a></li>
+					<li><a href="page_3.html">Компания</a></li>
+					<li><a href="page_4.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="menu__mobile">
+				<input id="menu-mb" type="checkbox">
+				<label class="menu__mobile-btn" for="menu-mb">
+				<span><i class="fas fa-bars fa-2x"></i></span>
+				</label>
+				<ul class="menu__mobile-ul">
+					<li><a href="page_main.html">Главная</a></li>
+					<li><a href="page_2.html">Туры</a></li>
+					<li><a href="page_3.html">Компания</a></li>
+					<li><a href="page_4.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="menu__logo"><a href="page_main.html"><img src="images/page_1/logo.png" alt="логотип"></a></div>
+		</div>
+		<section class="tour-all">
+			<h3>все туры по</h3>
+			<h2>скандинавии</h2>
+			<aside class="form-aside">
+				<form name="info" method="post" action="http://fe.it-academy.by/TestForm.php">
+					<h5>Подберем тур для Вас</h5>	
+					<div class="form-group">
+					<label for="exampleFormControlSelect1">Выберите страну:</label>
+					<select class="form-control" id="exampleFormControlSelect1" name="country">
+						<option value="1">Норвегия</option>
+						<option value="2">Швеция</option>
+						<option value="3">Дания</option>
+						<option value="4">Швеция &plus; Дания</option>			
+						<option value="5">Норвегия &plus; Швеция</option>		
+						<option value="6">Круиз по Скандинавии</option>
+					</select>
+					</div>
+					<div class="form-group"> 
+					<label>Количество человек</label>	
+					<select class="form-control" name="people">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1" name="children">
+						<label class="form-check-label" for="inlineCheckbox1">дети до 16 лет</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="1" checked name="adults">
+						<label class="form-check-label" for="inlineCheckbox3">взрослые</label>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Ваше Имя:</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Иван" name="name">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput2">Ваш телефон:</label>
+						<input type="text" class="form-control" id="exampleFormControlInput2" value="+37529" name="phone">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput3">Ваш Email:</label>
+						<input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@gmail.com" name="email">
+					</div>
+					<button class="btn btn-primary " type="submit">Отправить</button>
+				</form>
+			</aside>
+			<div class="tour-part1">
+				<a href="page_tur1.html">
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_1/tur1.jpg" alt="тур в Норвегию">
+						</div>	
+						<div class="tour__description">
+							<h4>Гранд тур в Норвегию</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Норвегия <i class="fas fa-calendar-alt"></i><span> 04/07/2020</span></p>
+							<ul>
+								<li>завтраки включены</li>
+								<li>экскурсии "все включено"</li>
+								<li>ночевки в отелях 4 звезды</li>
+								<li>10 дней и 11 ночей </li>
+								<li>для взрослых от 18 лет</li>
+								<li>возможна поэтапная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>2 050,73 BYN / 759€</p>
+						</div>		
+					</div>	
+				</a>
+				<a href="page_tur2.html">	
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_1/tur2.jpg" alt="Нордкап">
+						</div>	
+						<div class="tour__description">
+							<h4>Норвегия &plus; Нордкап</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Норвегия<i class="fas fa-calendar-alt"></i><span> 13/07/2020</span></p>
+							<ul>
+								<li>завтраки включены</li>
+								<li>экскурсии "все включено"</li>
+								<li>ночевки в отелях 4 звезды</li>
+								<li>10 дней и 11 ночей </li>
+								<li>для детей от 7лет</li>
+								<li>с предоплатой</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>1 823,77BYN / 675€</p>
+						</div>	
+					</div>
+				</a>
+				<a href="page_tur3.html">	
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_1/tur3.jpg" alt=">Живописная Норвегия">
+						</div>	
+						<div class="tour__description">
+							<h4>Живописная Норвегия</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Норвегия <i class="fas fa-calendar-alt"></i><span> 23/07/2020</span></p>
+							<ul>
+								<li>завтраки включены</li>
+								<li>экскурсии не включены</li>
+								<li>ночевки в отелях 4 звезды</li>
+								<li>6 дней и 7 ночей </li>
+								<li>для взрослых от 18 лет</li>
+								<li>только полная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>2 050,73 BYN / 759€</p>
+						</div>		
+					</div>
+				</a>	
+				<a href="page_tur4.html">
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_1/tur4.jpg" alt="Скандинавия">
+						</div>	
+						<div class="tour__description">
+							<h4>Вся Скандинавия</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Скандинавия <i class="fas fa-calendar-alt"></i><span> 11/06/2020</span></p>
+							<ul>
+								<li>завтраки не включены</li>
+								<li>экскурсии &quot;все включено&quot;</li>
+								<li>ночевки в отелях 3 звезды</li>
+								<li>7 дней и 8 ночей </li>
+								<li>для взрослых от 18 лет</li>
+								<li>возможна поэтапная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>1 683,77BYN / 753€</p>
+						</div>	
+					</div>
+				</a>	
+				<a href="page_tur5.html">
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_1/tur5.jpg" alt="3 столицы">
+						</div>	
+						<div class="tour__description">
+							<h4>3 столицы &plus; 6 фьордов</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Норвегия, Дания<i class="fas fa-calendar-alt"></i><span> 05/10/2020</span></p>
+							<ul>
+								<li>завтраки включены</li>
+								<li>экскурсии &quot;все включено&quot;</li>
+								<li>все ночевки в отелях 4 звезды</li>
+								<li>8 дней и 9 ночей </li>
+								<li>для детей от 14 лет</li>
+								<li>только полная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>2 050,73 BYN / 759€</p>
+						</div>	
+					</div>
+				</a>
+				<a href="page_tur6.html">	
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_1/tur6.jpg" alt="круиз">
+						</div>	
+						<div class="tour__description">
+							<h4>Круиз по Скандинавии</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Скандинавия<i class="fas fa-calendar-alt"></i><span> 24/05/2020</span></p>
+							<ul>
+								<li>завтраки не включены</li>
+								<li>доплпта за экскурсии</li>
+								<li>все ночевки в отелях 4 звезды</li>
+								<li>8 дней и 9 ночей </li>
+								<li>для взрослых от 18 лет</li>
+								<li>возможна поэтапная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>1 983,73 BYN / 856€</p>
+						</div>	
+					</div>
+				</a>	
+			</div>	
+			<input type="radio" class="more" name="more-name" id="more1" value="1">
+			<label for="more1" class="tour-more btn1 title-btn" data-title="показать еще"><i class="fas fa-sort-down fa-4x"></i></label>
+			<div class="tour-part2">
+				<a href="page_tur7.html">
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_2/tur7.jpg" alt="путешествие">
+						</div>	
+						<div class="tour__description">
+							<h4>Cкандинавское путешествие</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Скандинавия <i class="fas fa-calendar-alt"></i><span> 10/06/2020</span></p>
+							<ul>
+								<li>завтраки включены</li>
+								<li>экскурсии &quot;все включено&quot;</li>
+								<li>все ночевки в отелях 4 звезды</li>
+								<li>12 дней и 13 ночей </li>
+								<li>для взрослых от 18 лет</li>
+								<li>возможна поэтапная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>2 091,25BYN / 774€</p>
+						</div>	
+					</div>
+				</a>	
+				<a href="page_tur8.html">
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_2/tur8.jpg" alt="Швеция">
+						</div>	
+						<div class="tour__description">
+							<h4>Швеция &mdash; Дания</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Швеция, Дания<i class="fas fa-calendar-alt"></i><span> 25/08/2020</span></p>
+							<ul>
+								<li>завтраки включены</li>
+								<li>экскурсии &quot;все включено&quot;</li>
+								<li>все ночевки в отелях 3 звезды</li>
+								<li>8 дней и 9 ночей </li>
+								<li>для детей от 7 лет</li>
+								<li>возможна поэтапная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>1 823,77BYN / 675€</p>
+						</div>	
+					</div>
+				</a>
+				<a href="page_tur9.html">	
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_2/tur9.jpg" alt="Дания">
+						</div>	
+						<div class="tour__description">
+							<h4>Норвегия &mdash; Дания</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Норвегия, Дания <i class="fas fa-calendar-alt"></i><span> 15/06/2020</span></p>
+							<ul>
+								<li>завтраки не включены</li>
+								<li>доплпта за экскурсии</li>
+								<li>все ночевки в отелях 3 звезды</li>
+								<li>4 дней и 5 ночей </li>
+								<li>для взрослых от 18 лет</li>
+								<li>только полная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>2 050,73 BYN / 759€</p>
+						</div>	
+					</div>
+				</a>
+				<a href="page_tur10.html">	
+					<div class="tour">
+						<div class="tour__image">
+							<img src="images/page_2/tur10.jpg" alt="острова">
+						</div>	
+						<div class="tour__description">
+							<h4>Тур на Фарерские острова</h4>
+							<p><i class="fas fa-map-marker-alt"></i>Фареры<i class="fas fa-calendar-alt"></i><span> 12/08/2020</span></p>
+							<ul>
+								<li>завтраки не включены</li>
+								<li>экскурсии &quot;все включено&quot;</li>
+								<li>все ночевки в отелях 3 звезды</li>
+								<li>6 дня и 7 ночей </li>
+								<li>для взрослых от 18 лет</li>
+								<li>только полная оплата</li>
+							</ul>
+							<p><i class="fas fa-euro-sign"></i>2 050,73 BYN / 759€</p>
+						</div>	
+					</div>
+				</a>	
+			</div>	
+			<input type="radio" class="more" name="more-name" id="more2"  value="2">
+			<label for="more2" class="tour-more btn2 title-btn title-btn2" data-title="скрыть"><i class="fas fa-sort-up fa-4x"></i></label>
+		</section>
+		<section class="modal-form">
+			<button type="button" class="btn btn-primary button-mobile" data-toggle="modal" data-target="#exampleModalScrollable">
+				заполнить заявку на тур
+			</button>
+			<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-scrollable" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalScrollableTitle">Мы подберем тур для Вас</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<form method="post" action="http://fe.it-academy.by/TestForm.php">
+							<div class="form-group">
+								<label for="exampleFormControlSelect4">Выберите страну:</label>
+								<select class="form-control" id="exampleFormControlSelect4">
+									<option>Норвегия</option>
+									<option>Швеция</option>
+									<option>Дания</option>
+									<option>Швеция &plus; Дания</option>			
+									<option>Норвегия &plus; Швеция</option>		
+									<option>Круиз по Скандинавии</option>
+								</select>
+							</div>
+							<div class="form-group"> 
+								<label>Количество человек</label>	
+								<select class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
+								<label class="form-check-label" for="inlineCheckbox5">дети до 16 лет</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
+								<label class="form-check-label" for="inlineCheckbox6">взрослые</label>
+							</div>
+							<div class="form-group margin-label">
+								<label for="exampleFormControlInput7">Ваше Имя:</label>
+								<input type="text" class="form-control" id="exampleFormControlInput7" placeholder="Иван">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlInput8">Ваш телефон:</label>
+								<input type="text" class="form-control" id="exampleFormControlInput8" value="+37529">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlInput9">Ваш Email:</label>
+								<input type="email" class="form-control" id="exampleFormControlInput9" placeholder="name@gmail.com">
+							</div>
+							<div class="form-group">
+							<label for="exampleFormControlTextarea1">Дополнительная информация:</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="дополнительные пожелания к туру"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+								<button class="btn btn-primary" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer">
+			<div class="footer__menu">
+				<ul>
+					<li><a href="page_main.html">Главная</a></li>
+					<li><a href="page_2.html">Туры</a></li>
+					<li><a href="page_3.html">Компания</a></li>
+					<li><a href="page_4.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__country">
+				<ul>
+					<li><a href="page_tur1.html">Норвегия</a></li>
+					<li><a href="page_tur8.html">Швеция</a></li>
+					<li><a href="page_tur9.html">Дания</a></li>
+					<li><a href="page_2.html">Все страны</a></li>
+				</ul>
+			</div>
+			<div class="footer__contacts">
+				<ul>
+					<li><a href="https://goo.gl/maps/oY7rvWtFAzea3S159" target="_blank">г.Минск ул.Якубовского 56</a></li>
+					<li><a href="mailto:vicingtur@gmail.com">vicingtur@gmail.com</a></li>
+					<li><a href="tel:+375291271857">+375291271857</a></li>
+					<li><a href="tel:+375293354895">+375293354895</a></li>
+				</ul>
+			</div>
+			<div class="footer__logo">
+				<a href="page_main.html"><img src="images/page_1/logo-footer.png" alt="логотип-футер"></a>
+			</div>
+			<div class="footer__social">
+				<ul>
+					<li><a href="https://www.facebook.com/"><i class="fab fa-facebook" target="_blank"></i></a></li>
+					<li><a href="mailto:vicingtur@gmail.com"><i class="fas fa-envelope"></i></a></li>
+					<li><a href="tel:+375291271857"><i class="fab fa-viber"></i></a></li>
+					<li><a href="tel:+375291271857"><i class="fab fa-vk"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>  
+	<script type="text/javascript" src="js/scr.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

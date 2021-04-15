@@ -1,0 +1,333 @@
+@import 'styles.css';
+@import 'footer.css';
+@import 'header.css';
+
+.tour-all {
+    max-width: 1600px;
+    margin: 0 auto 110px;
+}
+/* каждый блок с турами  */
+.tour {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 250px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    overflow: hidden;
+    background: url(../images/page_2/bg-tur.png) no-repeat 200% 50%;
+    background-color: rgba( 255, 256, 255, 0.8);
+    background-size: 68%;
+}
+.tour-all .tour:hover {
+    background-color:white;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.tour-part1, .tour-part2 {
+    margin: 30px 30px 20px 400px;
+}
+.tour-part1 a, .tour-part2 a {
+    color: black;
+} 
+.tour-part1 a:hover, .tour-part2 a {
+    text-decoration: none;
+    color: black;
+}
+.tour__image {
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+    overflow: hidden;
+}
+/* описание туров */
+.tour__description {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+/*заголовок отступ от хедера */
+.tour-all h3 {
+    margin-top: 3%;
+}
+.tour-all h2, .tour-all h3 {
+    text-align: center;
+} 
+/* заголовок унутри описания */
+.tour h4 {
+    font-size: 1.1em;
+    padding: 6px 15px;
+    border-bottom: 1px solid black;
+}
+/* самый маленький текст */
+.tour p  {
+    color: #6988ff;
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+p span {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+/*  текста с иконками внутри описания  */
+.tour i {
+    color: #6988ff;
+    font-size: 0.9em;
+    padding: 0 5px 0 17px;
+    vertical-align: 1px;
+}
+.tour p:first-child {
+    margin: 6px 0;
+}
+.tour p:last-child {
+    padding: 0 10px;
+    margin: -10px;
+}
+/* список внутри описания */
+.tour ul li {
+    margin: -5px;
+    font-size: 0.9em;
+}
+/* стилизация чекбокса */
+input.more + label  {
+    position: absolute;
+    z-index: 1;
+    left: 87%;
+    font-size: 1.3em;
+    margin-top: -30px;
+}
+input.more  + label.btn2  {
+    left: 87%;
+    margin-top: -5px;
+}
+/* кнопка показать все туры */
+.tour-more {
+    color: white;
+    font-weight: normal;
+}
+.tour-more:hover {
+    color:#6988ff;
+}
+input.more:hover + label {
+    color:#6988ff;
+}
+/* чекбоксы скрыты */
+input.more {
+    display: none;
+}
+/* все туры в чекбоксе скрыты */
+input.more + label + div  {
+   display: none;
+}
+/* отображается если выбран чекбокс */
+input.more:checked + label + div {
+    display: block;
+}
+/* первый чекбок  */
+input.more + label {
+    text-decoration: none;
+    cursor: pointer;
+}
+input.more:checked + label {
+    display: none;
+}
+/* второй чекбокс */
+input.more + label + div + input + label {
+    display: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+input.more:checked + label + div + input + label  {
+    display: block;
+} 
+/* стилизация всплывающей подсказки */
+.title-btn {
+	display: inline;
+	position: relative;
+}
+.title-btn:hover:after {
+	content: attr(data-title);
+	z-index: 10;
+	position: absolute;
+    bottom: -20px;
+	right: 65px;
+	width: 120px;
+	padding: 7px;
+	font-size: 13px;
+	font-weight: 300;
+    color: black;
+    text-align: center;
+	background-color:white;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+.title-btn2:hover:after {
+    bottom: 5px;
+}
+/* стилизвция заявки */
+.form-aside {
+    margin: 30px 35px 0 35px;
+    width: 280px;
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    float: left;
+    top: 15%;
+    left: 5%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    background-color: rgba( 255, 256, 255, 0.5);
+}
+.form-aside form {
+    padding: 10px;
+}
+.form-aside label {
+    font-size: 1em;
+}
+.form-aside h5, .modal-form h5 {
+    color: #6988ff;
+    font-size: 1.3em;
+    margin-bottom: 20px; 
+    border-bottom: solid 1px;
+}
+.form-aside select {
+    height: 27px;
+    padding: 0.1em 0.5em;
+}
+.form-aside .form-check-inline {
+    margin-bottom: 10px;
+}
+.form-aside input {
+    height: 30px;
+}
+.form-aside textarea {
+    height: 60px;
+    padding: 0.1em 0.5em;
+}
+.form-aside button {
+    height: 40px;
+    width: 100%;
+    background-color: #6988ff;
+    letter-spacing: 3px;
+}
+.form-aside button:hover {
+    background-color: #4764d2;
+}
+/* скрыть мобильную кнопку заяви */
+.modal-form {
+    display: none;
+}
+.footer {
+    margin-top: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width : 1120px) {
+    .tour-all .tour-part1, .tour-all .tour-part2 {
+        margin-left: 350px;
+    }
+    .tour-all .tour__description p {
+        font-size: 0.8em;
+    }
+    .tour-all .tour__description h4 {
+        font-size: 0.9em;
+    }
+    .tour-all .tour .tour__image {
+        flex-basis: 270px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width : 1090px) {
+    .tour-all .tour-part1, .tour-all .tour-part2 {
+        margin: 20px 80px;
+    }
+    .form-aside {
+        display: none;
+    }
+    .modal-form {
+        display: block;
+    }
+    .modal-form h5 {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .modal-form label {
+        font-size: 1.3em;
+    }
+    .modal-form form {
+        margin: 0 30px;
+    }
+    .modal-form .modal-footer {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .modal-form .btn-primary {
+        letter-spacing: 3px;
+        background-color: #6988ff;
+    }
+    .modal-form .btn-primary:hover {
+        background-color: #4764d2;
+    }
+    .modal-form .button-mobile {
+        display: block;
+        margin: 70px auto 30px;
+        width: 320px;
+    }
+    .modal-dialog-scrollable .modal-content {
+        overflow: scroll;
+    } 
+}
+@media only screen and (min-width: 320px) and (max-width : 768px) {
+    .tour-all .tour {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: 520px;
+        width: 320px;
+        margin: 20px auto;
+        border: 1px solid rgba(0,0,0,.125);
+        background: none;
+        border-radius: 0.25rem;
+        background-color: white;
+    }
+    .tour-all .tour-part1, .tour-all .tour-part2 {
+        margin: 20px auto;
+    } 
+   
+    .tour-all h3 {
+        margin-top: 25px;
+    }
+    .tour i {
+        padding-left: 10px;
+    }
+    /* отступы для показать и скрыть  */
+    input.more  + label.btn2  {
+        left: 75%;
+        margin-top: -10px;
+    }
+    input.more  + label.btn1  {
+        left: 75%;
+        margin-top: -40px;
+        }
+    .tour__image {
+        -webkit-box-flex:11;
+            -ms-flex:11 30%;
+                flex:11 30%;
+    }    
+    .tour__description {
+        -webkit-box-flex: 1 ;
+            -ms-flex-positive: 1 ;
+                flex-grow: 1 ;
+    }
+    .tour-all h2 {
+        margin-bottom: 20px;
+    }
+   
+    .footer {
+        margin-top: -30px;
+    }
+}

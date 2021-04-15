@@ -1,0 +1,1123 @@
+@import 'styles.css';
+@import 'footer.css';
+@import 'header.css';
+
+body {
+	background: url(../images/page_1/body-bg.png) no-repeat center bottom;
+	background-color: #6987ff17;
+}
+/* анимация для кнопки на глвном экране */
+@-webkit-keyframes MyAnimation2 {
+	from { color: white }
+	50% {color: #1b1f32}
+    to { color: #4764d2 }
+}
+@keyframes MyAnimation2 {
+	from { color: white }
+	50% {color: #1b1f32}
+    to { color: #4764d2 }
+}
+/* первый блок, главный экран */
+.block-main {
+	height: 600px;
+	min-width: 360px;
+	max-width: 1400px;
+	/* width: 100%; */
+	background-color: #1b1f32;
+	overflow: hidden;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 120px 80px 1fr 700px;
+	grid-template-columns: 120px 80px 1fr 700px;
+	-ms-grid-rows:  1fr 200px 50px 20px 30px 1fr 100px 30px 70px;
+	grid-template-rows:  1fr 200px 50px 20px 30px 1fr 100px 30px 70px;
+}
+.block-main > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(3) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(4) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(5) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(6) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(7) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(8) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(9) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(10) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(11) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(12) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(13) {
+	-ms-grid-row: 4;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(14) {
+	-ms-grid-row: 4;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(15) {
+	-ms-grid-row: 4;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(16) {
+	-ms-grid-row: 4;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(17) {
+	-ms-grid-row: 5;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(18) {
+	-ms-grid-row: 5;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(19) {
+	-ms-grid-row: 5;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(20) {
+	-ms-grid-row: 5;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(21) {
+	-ms-grid-row: 6;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(22) {
+	-ms-grid-row: 6;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(23) {
+	-ms-grid-row: 6;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(24) {
+	-ms-grid-row: 6;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(25) {
+	-ms-grid-row: 7;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(26) {
+	-ms-grid-row: 7;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(27) {
+	-ms-grid-row: 7;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(28) {
+	-ms-grid-row: 7;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(29) {
+	-ms-grid-row: 8;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(30) {
+	-ms-grid-row: 8;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(31) {
+	-ms-grid-row: 8;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(32) {
+	-ms-grid-row: 8;
+	-ms-grid-column: 4;
+}
+.block-main > *:nth-child(33) {
+	-ms-grid-row: 9;
+	-ms-grid-column: 1;
+}
+.block-main > *:nth-child(34) {
+	-ms-grid-row: 9;
+	-ms-grid-column: 2;
+}
+.block-main > *:nth-child(35) {
+	-ms-grid-row: 9;
+	-ms-grid-column: 3;
+}
+.block-main > *:nth-child(36) {
+	-ms-grid-row: 9;
+	-ms-grid-column: 4;
+}	
+/* главная картинка */
+.block-main__img {
+	-ms-grid-column: 4;
+	-ms-grid-column-span: 1;
+	grid-column: 4 / 5;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 9;
+	grid-row: 1 / 10;
+}
+/* текст описание в первом блоке */
+.block-main__text {
+	-ms-grid-column: 4;
+	-ms-grid-column-span: 1;
+	grid-column: 4 / 5;
+	width: 400px;
+	-ms-grid-row: 7;
+	-ms-grid-row-span: 3;
+	grid-row: 7 / 10;
+	-ms-grid-column-align: end;
+	justify-self: end;
+	background-color: #6988ff;
+	font-weight:normal;
+	line-height: 1.3em;
+	color: white;
+	padding: 20px 0 0 30px;
+	opacity: 0.9;
+	border-top-left-radius: 10px;
+}
+.block-main__text h4 {
+	margin-top: 20px;
+} 
+.block-main__text span {
+	font-size: 1.5em;
+}
+.block-main__button {
+	-ms-grid-column: 4;
+	-ms-grid-column-span: 1;
+	grid-column: 4 / 5;
+	-ms-grid-row: 8;
+	-ms-grid-row-span: 2;
+	grid-row: 8 / 10;
+	-ms-grid-column-align: center;
+	    justify-self: center;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.margin-l {	
+	margin-left: -5px;
+}
+.block-main__button a i {
+	color: white;
+	padding: 0;
+	-webkit-animation: MyAnimation2 3s infinite;
+	        animation: MyAnimation2 3s infinite;
+	-webkit-animation-direction: alternate;
+	        animation-direction: alternate;
+}
+/* стилизация всплывающей подсказки */
+.title-btn {
+	display: inline;
+	position: relative;
+}
+.title-btn:hover:after {
+	content: attr(data-title);
+	z-index: 10;
+	position: absolute;
+	bottom: -20px;
+	left: 90%;
+	width: 130px;
+	padding: 7px 15px 10px 15px;
+	font-size: 13px;
+	font-weight: 300;
+	color: #fff;
+	background-color: #1b1f32;
+	border-radius: 5px;
+}
+/* скандинавия */
+.block-main__name {
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
+	grid-column: 2 / 4;
+	-ms-grid-row: 3;
+	-ms-grid-row-span: 1;
+	grid-row: 3 / 4;
+}
+/* под скандинавией */
+.block-main__europe {
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
+	grid-column: 2 / 5;
+	-ms-grid-row: 5;
+	-ms-grid-row-span: 1;
+	grid-row: 5 / 6;
+}
+/* страны */
+.block-main__country {
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
+	grid-column: 2 / 4;
+	-ms-grid-row: 9;
+	-ms-grid-row-span: 1;
+	grid-row: 9 / 10;
+}
+.block-main__europe, .block-main__country {
+	font-size: 1.2em;
+	font-weight:normal;
+	line-height: 1.2em;
+	color: white;
+	margin: 0;
+}
+/* блок с текстом  */
+.block-about {
+	height: 820px;
+	min-width: 360px;
+	max-width: 1400px;
+	/* width: 100%; */
+	background: url(../images/page_1/block2.jpg) no-repeat center bottom;
+}
+.block-about .block-about__mobile{
+	display: none;
+}
+.block-about h3 {
+	padding: 60px 0 0 120px;
+}
+.block-about h2 {
+	margin-left: 120px;
+}
+.block-about__text {
+	margin: 15px 400px 0 120px;
+	line-height: 1.4em;
+}
+/* блок 3, главный текст */
+.block-popular h3, .block-popular h2{
+	text-align: center;
+}
+.block-popular {
+	min-width: 360px;
+	max-width: 1400px;
+}
+.block-popular h3 {
+	padding-top: 30px;
+}
+ /*блок с шестью турами*/
+.tours {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 110px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	position: relative;
+}
+/*дочерний блок тур с кнопкой */
+.tour {
+	margin: 35px 20px 0 20px;
+	overflow: hidden;
+	width: 320px;
+	height: 480px;
+	border: 1px solid rgba(0,0,0,.125);
+	position: relative;
+	background-color: rgba( 255, 256, 255, 0.5);
+	border-radius: 0.25rem;
+}
+.tour:hover {
+background-color: white;
+}
+/*описания*/
+.tours h4 {
+	text-align: center;
+	padding: 30px 25px 20px 15px;
+}
+.tours .tour__description {
+	letter-spacing: normal;
+}
+/* позиционированная кнопка в описании туров */
+.button-one {
+	position: absolute;
+	left: 20%;
+	top: 47%;
+}
+/* кнопка всеп туры  */
+.button-two-position {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	margin: 30px 0;
+}
+.button-two:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #4764d2; ;
+}
+/*голубые иконки fontawesome в описании туров*/
+.tour i {
+	color: #6988ff;
+	padding: 0 25px;
+}
+.tour__description .padding {
+	padding: 0 15px 0 25px;
+}
+/* блок с флагами */
+.block-map {
+	min-width: 360px;
+	max-width: 1400px;
+	height: 530px;
+	background: url(../images/page_1/bg-block-map.png) no-repeat center bottom;
+}
+.block-map .wrapper {
+	height: 530px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	margin-bottom: 30px;
+}
+.block-map .wrapper__map {
+	width: 450px;
+	margin-left: 100px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 40%;
+	        flex: 0 0 40%;
+}
+.block-map .wrapper__text {
+	margin-right: 40px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 45%;
+	        flex: 0 0 45%;
+	margin-top: 30px;
+	width: 650px;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	grid-template-columns: 1fr;
+	-ms-grid-rows: 80px 20px 60px 120px 1fr;
+	grid-template-rows: 80px 20px 30px 120px 1fr;
+}
+#text-start4 {
+	padding-left: 25px;
+}
+.wrapper__text-main {
+	margin-top: 30px;
+}
+.block-map .wrapper__text > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.block-map .wrapper__text > *:nth-child(2) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+.block-map .wrapper__text > *:nth-child(3) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+.block-map .wrapper__text > *:nth-child(4) {
+	-ms-grid-row: 4;
+	-ms-grid-column: 1;
+}
+.block-map .wrapper__text > *:nth-child(5) {
+	-ms-grid-row: 5;
+	-ms-grid-column: 1;
+}
+.block-map [id*="text-start"] {
+	display: block;
+}
+.block-map [id*="text-map"] {
+	display: none;
+}
+.block-map #text-start4 {
+	margin-top: 30px;
+}
+.wrapper__map #norway:hover #fill-norway, .wrapper__map #sweden:hover #fill-sweden, .wrapper__map #denmark:hover #fill-denmark  {
+	fill: #6987ff5d;
+}
+.wrapper__map #norway:hover, .wrapper__map #sweden:hover, .wrapper__map #denmark:hover  {
+	cursor: pointer;
+}
+.wrapper__map a {
+	text-decoration: none;
+}
+/* блок с большими картинками туров при навелении с надписью */
+.block-threeTours {
+	overflow: hidden;
+	height: 670px;
+	min-width: 360px;
+	max-width: 1400px;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 50% 50%;
+	grid-template-columns: 50% 50%;
+	-ms-grid-rows: 50% 50%;
+	grid-template-rows: 50% 50%;
+}
+.block-threeTours > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.block-threeTours > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+}
+.block-threeTours > *:nth-child(3) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+.block-threeTours > *:nth-child(4) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+}
+/* тур с картинкой №1 с навдением */
+.photo1 {
+	background-image: url(../images/page_1/tur1-block5.jpg);
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 2;
+	grid-row: 1/3;
+	position: relative;
+}
+/* туры с картинкой №2 и №3 с навдением */
+.photo2 {
+	background: url(../images/page_1/tur2-block5.jpg) no-repeat center center;
+	-ms-grid-column: 2;
+	grid-column: 2;
+	-ms-grid-row: 1;
+	grid-row: 1;
+	position: relative;
+}
+.photo3 {
+	background: url(../images/page_1/tur3-block5.jpg) no-repeat center center;
+	-ms-grid-column: 2;
+	grid-column: 2;
+	-ms-grid-row: 2;
+	grid-row: 2;
+	position: relative;
+}
+/* затемнение блоков в большими картинками */
+.photo1:hover, .photo2:hover, .photo3:hover {
+	opacity: 0.9;
+}
+/* фон описания на большой картинке №1 */
+.photo1__text {
+	position: absolute;
+	bottom: 35%;
+	left: 100%;
+	right: 0;
+	background-color: #6987ffad;
+	overflow: hidden;
+	width: 0;
+	height: 25%;
+	-webkit-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+/* текст описания на большой картинке №1 */
+.photo1__text-1 {
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	left: 25%;
+	top: 10%;
+	text-align: center;
+	padding: 10px 0px;
+	white-space: nowrap;
+	margin-top: 10px;
+}
+/* изменение по ховеру на большой картинке №1 */
+.photo1:hover .photo1__text {
+	width: 100%;
+	height: 25%;
+  	left: 0;
+}
+/* фон описания на большой картинке №2 и №3 */
+.photo2__text, .photo3__text  {
+	position: absolute;
+  	bottom: 35%;
+  	left: 0;
+  	right: 100%;
+  	background-color: #6987ffad;
+  	overflow: hidden;
+  	width: 0;
+  	height:30%;
+  	-webkit-transition: 0.5s ease;
+  	-o-transition: 0.5s ease;
+  	transition: 0.5s ease;
+	white-space: nowrap;
+}
+/* текст описания на большой картинке №2 №3 */
+.photo1__text-2, .photo1__text-3  {
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	left: 30%;
+	margin: 0;
+	text-align: center;
+	padding: 30px 0;
+	white-space: nowrap;
+}
+/* изменение по ховеру на большой картинке №2 и №3 */
+.photo2:hover .photo2__text, .photo3:hover .photo3__text  {
+	width: 100%;
+	height: 30%;
+	right: 0;
+}
+/* текст ссылки по ховеру на больших картинках */
+.photo1__text-1:hover, .photo1__text-2:hover, .photo1__text-3:hover {
+	text-decoration: none;
+	color:#1b1f32;;
+}
+/* скрыть мобильную кнопку */
+.photo1__text-mobail, .photo2__text-mobail, .photo3__text-mobail {
+	display: none;
+}
+/* блок 6 с комментариями */
+.block-comments {
+	text-align: center;
+	min-width: 360px;
+	max-width: 1400px;
+	height: 100%;
+	margin-top: 60px;
+}
+.block-comments .row i {
+	padding: 5px;
+}
+.block-comments h5 {
+	font-size: 0.8em;
+}
+/* блок с формой связи */
+.form {
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	margin-top: 30px;
+}
+/* поля для заполнения */
+.form .text-input {
+	margin-top: 25px;
+	padding: 15px;
+	width: 230px;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	background-color: rgba( 255, 256, 255, 1);
+}	
+/* кнопка отправить в форме */
+.form .text-submit, .button-2 {
+	background: #6988ff;
+	padding: 16px;
+	width: 230px;
+	border: none;
+	font-size: 1em;
+	text-align: center;
+	letter-spacing: 3px;
+	color: white;
+	border-radius: .25rem;
+}
+.form .text-submit:hover, .block-popular .button2-position:hover {
+	background: #4764d2;
+	color: white;
+	text-decoration: none;
+}
+@media only screen and (min-width: 768px) and (max-width : 1100px) {
+	.block-main__europe {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 3;
+		grid-column: 2 / 5;
+	}
+	.block-main__country {
+		-ms-grid-column: 2;
+    	-ms-grid-column-span: 3;
+    	grid-column: 2 / 5;
+	}
+	.block-about .block-about__text {
+		margin-right: 100px;
+	}
+	.block-map {
+		height: 490px;
+	}	
+	.block-map .wrapper__text .wrapper__text-main h2 {
+		font-size: 1.2em;
+	}
+	.block-map .tour__description  {
+		font-size: 1.2em;
+	}
+
+}
+@media only screen and (min-width: 768px) and (max-width : 1030px) {
+	.block-map .wrapper__text {
+		-ms-grid-rows: 80px 0px 60px 120px 1fr;
+		grid-template-rows: 80px 0px 30px 120px 1fr;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width : 1030px) {
+	.block-map {
+		display: none;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width : 930px) {
+	.block-main__text {
+		display: none;
+	}
+	.block-main__button {
+		display: none;
+	}
+	.block-comments {
+		margin:20px 50px;
+	}
+	.block-comments .card {
+		margin-top: 10px;
+	}
+	.block-comments h4 {
+		padding: 6px;
+	}
+}	
+/* для телефонов до 768px */
+@media only screen and (min-width: 360px) and (max-width : 768px) {	
+	/* первый блок, главный экран */
+	.block-main {
+		overflow: hidden;
+		-ms-grid-columns: 30px 100px 1fr 100px 30px;
+		grid-template-columns: 30px 100px 1fr 100px 30px;
+		-ms-grid-rows: 50px 20px 1fr 50px 20px 30px 20px 30px 20px 1fr 50px;
+		grid-template-rows: 50px 20px 1fr 50px 20px 30px 20px 30px 20px 1fr 50px;
+	}
+	.block-main > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(3) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(4) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(5) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(6) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(7) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(8) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(9) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(10) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(11) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(12) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(13) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(14) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(15) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(16) {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(17) {
+		-ms-grid-row: 4;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(18) {
+		-ms-grid-row: 4;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(19) {
+		-ms-grid-row: 4;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(20) {
+		-ms-grid-row: 4;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(21) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(22) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(23) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(24) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(25) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(26) {
+		-ms-grid-row: 6;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(27) {
+		-ms-grid-row: 6;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(28) {
+		-ms-grid-row: 6;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(29) {
+		-ms-grid-row: 6;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(30) {
+		-ms-grid-row: 6;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(31) {
+		-ms-grid-row: 7;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(32) {
+		-ms-grid-row: 7;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(33) {
+		-ms-grid-row: 7;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(34) {
+		-ms-grid-row: 7;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(35) {
+		-ms-grid-row: 7;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(36) {
+		-ms-grid-row: 8;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(37) {
+		-ms-grid-row: 8;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(38) {
+		-ms-grid-row: 8;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(39) {
+		-ms-grid-row: 8;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(40) {
+		-ms-grid-row: 8;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(41) {
+		-ms-grid-row: 9;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(42) {
+		-ms-grid-row: 9;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(43) {
+		-ms-grid-row: 9;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(44) {
+		-ms-grid-row: 9;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(45) {
+		-ms-grid-row: 9;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(46) {
+		-ms-grid-row: 10;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(47) {
+		-ms-grid-row: 10;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(48) {
+		-ms-grid-row: 10;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(49) {
+		-ms-grid-row: 10;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(50) {
+		-ms-grid-row: 10;
+		-ms-grid-column: 5;
+	}
+	.block-main > *:nth-child(51) {
+		-ms-grid-row: 11;
+		-ms-grid-column: 1;
+	}
+	.block-main > *:nth-child(52) {
+		-ms-grid-row: 11;
+		-ms-grid-column: 2;
+	}
+	.block-main > *:nth-child(53) {
+		-ms-grid-row: 11;
+		-ms-grid-column: 3;
+	}
+	.block-main > *:nth-child(54) {
+		-ms-grid-row: 11;
+		-ms-grid-column: 4;
+	}
+	.block-main > *:nth-child(55) {
+		-ms-grid-row: 11;
+		-ms-grid-column: 5;
+	}
+	/* логотип в первом блоке */
+	.menu__logo {
+		-ms-grid-column: 2;
+		grid-column: 2;
+	}
+	/* главная картинка */
+	.block-main__img {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 10;
+		grid-row: 1 / 11 ;	
+		-ms-grid-column: 3;	
+		-ms-grid-column-span: 3;	
+		grid-column: 3 / 6;
+		-webkit-filter: brightness(0.5);
+		        filter: brightness(0.5);
+	}
+	/* скрыть описание скандинавии, главное меню, большой текст, и 4-6 туры */
+	.block-main__text, .main-menu, .block-about  .block-about__text , .block-popular .tur-none {
+		display: none;
+	}
+	.block-main__name {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 3;
+		grid-column: 2 / 5;
+		-ms-grid-row: 4;
+		grid-row: 4;
+		z-index: 2;
+	}
+	.block-main__europe {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 3;
+		grid-column: 2 / 5;
+		-ms-grid-row: 6;
+		grid-row: 6;
+		z-index: 2;
+	}
+	.block-main__country {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 3;
+		grid-column: 2 / 5;
+		-ms-grid-row:8;
+		grid-row:8;
+		z-index: 2;
+	}
+	.block-main__button {
+		display: block;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 3;
+		grid-column: 2 / 5;
+		-ms-grid-row: 9;
+		grid-row: 9;
+		margin-left: 0;
+		-ms-grid-column-align: start;
+		    justify-self: start;
+	} 
+	.block-about {
+		height: 730px;
+		background: url(../images/page_1/block2.jpg) no-repeat center;
+	}
+	/* краткий текст для телефона */
+	.block-about .block-about__mobile{
+		display: block;
+		text-align: justify;
+		margin: 0 30px;
+	}
+	.block-about h2 {
+		margin: 0 0 20px 0;
+		text-align: center;
+		padding: 0;
+	}
+	.block-about h3 {
+		padding: 40px 0 0; 
+		text-align: center;
+	}
+	.block-about h5 {
+		line-height: 25px;
+	}
+	.block-popular {
+		margin-top: 40px;
+	}
+	.block-popular h3 {
+		padding: 0;
+	}
+	/* скрыть три тура */
+	.block-popular .mobile-none {
+		display: none;
+	}
+	/* переместить светло-синий фон в блоке с виртуальными турами */
+	.block-map {
+		display: none;
+	}
+	.block-map input.wrapper__map + label {
+		padding: 15px 10px;
+	}
+	/* скрыть карты стран */
+	div.country {
+		background: none;
+	}
+	.block-map div.country ul {
+		padding-left: 50px;
+	}
+	.block-map .country ul li {
+		margin: 0;
+		font-size: 1.1em;
+	}
+	.block-map .country ul li:last-child {
+		font-size: 1.2em;
+		padding-top: 30px;
+		margin-left: 30px;
+	}
+	/* блок с большими картинками туров при навелении с надписью */
+	.block-threeTours {
+		-ms-grid-columns: 100%;
+		grid-template-columns: 100%;
+		-ms-grid-rows: 32% 36% 32%;
+		grid-template-rows: 32% 36% 32%;
+	}
+	.block-threeTours > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+	.block-threeTours > *:nth-child(2) {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+	}
+	.block-threeTours > *:nth-child(3) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+	/* скрыть описания для компьютера */
+	.photo1__text, .photo2__text, .photo3__text {
+		display: none;
+	}
+	/* тур с картинкой №1 с навдением */
+	.photo1 {
+		-ms-grid-column: 1;
+		grid-column: 1;
+		-ms-grid-row: 2;
+		grid-row: 2;
+		position: relative;
+		background-size: 100%;
+		background-position: 0% 100%;
+	}
+	/* тур с картинкой №2 с навдением */
+	.photo2 {
+		-ms-grid-column: 1;
+		grid-column: 1;
+		-ms-grid-row: 1;
+		grid-row: 1;
+		position: relative;
+		background-size: 100%;
+		background-position: 0% 23%;
+	}
+	/* тур с картинкой №3 с навдением */
+	.photo3 {
+		-ms-grid-column: 1;
+		grid-column: 1;
+		-ms-grid-row: 3;
+		grid-row: 3;
+		position: relative;
+		background-size: 100%;
+		background-position: 0% 23% ;
+	}
+		/* показать кнопки для телефона */
+	.photo1__text-mobail, .photo2__text-mobail, .photo3__text-mobail {
+		position: absolute;
+		top: 40%;
+		text-align: center;
+		display: block;
+		width: 100%;
+		top: 33%;
+		left: auto;
+		height: auto;
+		opacity: 0.8;
+		padding: 25px 0;
+		background-color: #4764d2;
+		color: white;
+		text-decoration: none;
+	}
+	.photo1__text-mobail:hover, .photo2__text-mobail:hover, .photo3__text-mobail:hover {
+		background-color: white;
+		color: #4764d2;
+		text-decoration: none;
+	}
+	/* телефонная форма обр.связи */
+	.form .text-input {
+		display: block;
+		margin: 10px auto;
+	}
+	.footer {
+		margin-top: 200px;
+	}
+}

@@ -1,0 +1,83 @@
+@import 'styles.css';
+@import 'footer.css';
+@import 'header.css';
+
+/* отступ от хедера */
+.block-about h2 {
+    text-align: center;
+    margin: 30px;
+}
+.block-about {
+    width: 100%;
+}
+.company__part-star h4, .company__part-star i { 
+    color: #4764d2;
+}
+.company {
+    margin: 20px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.company__part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+}
+.company__part-star {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 250px;
+            flex: 0 0 250px;
+    text-align: center;
+}
+.block-gallery {
+    margin: 30px auto;
+    width: 100%;
+}
+.images {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel {
+    display: none;
+}
+/* для телефонов до 768px */
+@media only screen and (min-width: 320px) and (max-width : 768px) {
+    .block-about .company__part {
+        display: block;
+        width: 100%;
+    }
+    .block-about .company {
+        margin: 30px;
+        text-align: center;
+    }
+    .block-about .company i {
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    .block-about h2 span {
+        display: none;
+    }
+    .block-about h2 .mobile-text {
+        display: block;
+    }
+    .block-gallery .carousel {
+        display: block;
+    }
+    .block-gallery .images {
+        display: none;
+    }
+    .footer {
+        margin-top: 0;
+    }
+}    
+
